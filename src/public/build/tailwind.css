@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+    0%   { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes fadeIn{
+    0%   { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes fadeIn{
+    0%   { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes fadeIn{
+    0%   { opacity:0; }
+    100% { opacity:1; }
+  } 
+
+  @keyframes fadeOut {
+    0%   { opacity:1; }
+    100% { opacity:0; }
+  }
+  @-o-keyframes fadeOut{
+    0%   { opacity:1; }
+    100% { opacity:0; }
+  }
+  @-moz-keyframes fadeOut{
+    0%   { opacity:1; }
+    100% { opacity:0; }
+  }
+  @-webkit-keyframes fadeOut{
+    0%   { opacity:1; }
+    100% { opacity:0; }
+  } 
+
+  .animFadeIn {
+    animation-name: fadeIn;
+  }
+
+  .animFadeout {
+    animation-name: fadeOut;
+  }
+
+.logo-uim {
+    @apply text-center mx-auto w-24 mt-10 pb-8;
+}
+
+.logo-uim-das {
+    @apply w-12;
+}
+ .li-list{
+    @apply font-bold;
+    list-style-type: circle;
+  }
+  
+
+  .group:hover .group-hover\:block {
+    display: block !important;
+  }
+
+  .headerapp {
+      width:100%;
+      position:fixed;
+      z-index:999999;
+
+  }
+
+  @media (min-width: 426px) {
+
+  }
+
+  
+  @media (max-width: 1023px) {
+    .headerapp {
+        width:100%;
+        position:relative;
+        z-index:999999;
+    }
+
+    #sidemenu {
+    display:none;
+    animation: fadeIn .5s;
+
+    }
+
+    #open {
+        display:block;
+    }
+
+    #close {
+        display:none;
+    }
+}
+
+
+  @media (min-width: 1024px) {
+
+    .mainapp {
+        padding-top:8.5rem;
+    }
+  
+  }
+
+
+  @media (min-width: 1082px) {
+
+  .mainapp {
+      padding-top:5.9rem;
+  }
+
+}

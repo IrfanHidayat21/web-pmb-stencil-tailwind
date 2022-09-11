@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+.item-btn {
+  width: 100% !important;
+  --border-radius: 10px;
+  border-radius: 10px;
+  margin-top:10px;
+  z-index:0;
+}
+ .label-panduan {
+  font-size: 15px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.isi-panduan {
+  padding-left: 25px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.p-panduan {
+  font-size: 15px;
+}
+
+.iconsuccess {
+  width:8%;
+  margin:auto;
+}

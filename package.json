@@ -1,0 +1,28 @@
+{
+  "name": "pmb",
+  "private": true,
+  "version": "0.0.1",
+  "description": "pmb",
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watch",
+    "generate": "stencil generate",
+    "watchCSS": "postcss src/public/build/tailwind.css -o src/global/app.css --watch"
+  },
+  "devDependencies": {
+    "@ionic/core": "^5.0.7",
+    "@stencil/core": "^1.12.2",
+    "@stencil/router": "^1.0.1",
+    "@types/node": "^14.0.13",
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2"
+  }
+}
